@@ -1,5 +1,4 @@
-= SystemDock profile for Svarog CI container
+# SystemDock profile for Mosquitto MQTT docker container
 
-Profile to run Svarog CI container as systemd service using SystemDock (https://github.com/rpavlyuk/systemdock)
+Profile to run Mosquitto MQTT container as systemd service using SystemDock (https://github.com/rpavlyuk/systemdock)
 
-WORK IN PROGRESS

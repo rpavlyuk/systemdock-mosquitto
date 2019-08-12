@@ -1,0 +1,24 @@
+container: eclipse-mosquitto:latest
+created: 2019-08-12 11:53:53.501852
+name: mosquitto
+ports:
+        1883/tcp: 1883
+        9001/tcp: 9001
+volumes:
+        /etc/mosquitto/config:
+                bind: /mosquitto/config
+                mode: rw
+        /usr/share/mosquitto:
+                bind: /mosquitto/data
+                mode: rw
+        /var/log/mosquitto:
+                bind: /mosquitto/log
+                mode: rw
+        /etc/localtime:
+                bind: /etc/localtime
+                mode: ro
+privileged: false
+tty: true
+environment: {}
+network_mode: bridge
+working_dir: /root

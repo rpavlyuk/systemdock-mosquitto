@@ -22,3 +22,4 @@ tty: true
 environment: {}
 network_mode: bridge
 working_dir: /root
+keep_alive: True

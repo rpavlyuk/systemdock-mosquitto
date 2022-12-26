@@ -9,8 +9,8 @@ Restart=no
 RestartSec=60s
 Type=simple
 NotifyAccess=all
-ExecStart=-/usr/bin/systemdock -v -a start -n mosquitto
-ExecStop=/usr/bin/systemdock -v -a stop -n mosquitto
+ExecStart=-/usr/bin/systemdock -a start -n mosquitto
+ExecStop=/usr/bin/systemdock -a stop -n mosquitto
 
 [Install]
 WantedBy=multi-user.target
